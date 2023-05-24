@@ -41,7 +41,7 @@ function handleSearch(event) {
     data.forEach(element => {
 
     bodyRightInnerHtml += `<div class="box"> <img src="static/images/spotify.png" width="86" height="86" alt="Pic 1" class="left" />
-    <p>Song Rec: ${element[2]} <br>${element[3]} ${element[4]} <br><a href="http://www.spotify.com">Spotify</a>.</p>
+    <p>Song Rec: <strong>${element[2]}</strong> <br>${element[3]} ${element[4]} <br><a href="http://www.spotify.com">Spotify</a>.</p>
     <div class="btns"> <a href="#"><span>Listen</span></a> <a href="#"><span>Add</span></a> </div>
    <div class="clear"></div>
    </div>`
