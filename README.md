@@ -30,7 +30,7 @@ The data was then split into training and testing and standardized with the scal
 
 ![image](https://github.com/apanthari/project_4_2/assets/119544491/d78c31ab-035f-43fa-b67c-8287c8072c75)
 
-### K-Means and PCA
+### Unsupervised: K-Means and PCA
 
 The K-means model revealed that the optimal number of clusters is 3.
 
@@ -45,3 +45,9 @@ After initializing the standardized data with clusters = 3, PCA was used to fit 
 The k-nearest neighbors deemed the most telling algorithm during analysis. The normalized data frame was indexed by song name multiplied by the Compressed Sparse Row (CSR) matrix. The CRS matrix is commonly utilized for recommender systems due its efficient ability for row-vector assessment, because each row in this data set is a song and each column represents a feature about that song, CRS matrices can help break down the dense normalized matrix. Nearest Neighbors model fitting was then applied with brute-force algorithm for fast computation and cosine similarity metrics to calculate the minimum distances to determine similar songs. 
 
 ![on_fire](https://github.com/apanthari/project_4/assets/119544491/e1d00d65-f8d8-403b-8b70-8b15ada162d1)
+
+## Conclusion
+
+Using the model developed from the k-nearest neighbors method, a javascript function was created. Through html, css and javascript with the help of packages pickle and flask, the recommendations were displayed on a website based on user input.
+
+If time allowed further research would include more modeling techniques, pulling from other data sets to refine the categorizations of each song such as genre and more interactive website features.
