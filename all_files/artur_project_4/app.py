@@ -29,7 +29,7 @@ def predict(song):
     if ret: 
         return jsonify(ret)
     else:
-        return jsonify(["Not Found"])
+        return jsonify(["Whoops! This song is not found in our data base :/"])
 
 # # 4. Define what to do when a user hits the /about route
 # @app.route("/about")
