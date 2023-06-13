@@ -20,6 +20,13 @@ function handleSearch(event) {
 
     
 
+<<<<<<< HEAD
+=======
+
+    
+
+
+>>>>>>> 06f5b4f89c1db3441f063d39f777a52946421ae0
     data.shift();
 
 
