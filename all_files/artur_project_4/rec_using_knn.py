@@ -28,20 +28,13 @@ def model_prediction(songsearch):
 
     rec_list = []
 
-    #get the artist name of the song 
-    #searchsong_artist_name = list(temp_genre.loc[temp_genre['song_name'] == songsearch, 'artist_name'])[0]
-
     for i in range(0, len(distances.flatten())):
         ret = ""
         if i == 0:
-            #ret = "Recommendation for ", temp_features.iloc[song_index,0], "by: ", searchsong_artist_name, "are: "
-
-            ret = "Recommendation for", temp_features.iloc[song_index, 0], "by", temp_genre.iloc[song_index-1, 1], "are: "
+            ret = "Recommendation for", temp_features.iloc[song_index, 0].title(), "by", temp_genre.iloc[song_index, 1].title(), "are: "
             rec_list.append(ret)
         else:
-            #ret = i,": ",temp_features.iloc[indices.flatten()[i],0], "by: ", "| distance= ", distances.flatten()[i]
-
-            ret = i,": ",temp_genre.iloc[indices.flatten()[i], 0], "by", temp_genre.iloc[indices.flatten()[i]-1, 1], "|  distance= ",distances.flatten()[i]
+            ret = i,": ",temp_genre.iloc[indices.flatten()[i], 0].title(), "by", temp_genre.iloc[indices.flatten()[i], 1].title(), "|  distance= ",distances.flatten()[i]
             rec_list.append(ret)
 
 
